@@ -113,17 +113,12 @@ The program writes output to:
 
 🔍 **Things to Improve**
 
-- Implement dynamic deduction calculations based on gross pay and year
-- Load holidays dynamically from a file or database
-- Add support for multiple employee rate changes over time
-
 👥 **Contributors**
 
 | Name                    | GitHub Handle                                      |
 |-------------------------|----------------------------------------------------|
 | Kristov Judilla         | [@Kristov-Judilla](https://github.com/Kristov-Judilla) |
 | Abigail Ann Sarmiento| [@aasarmiento](https://github.com/aasarmiento)              |
-| 
 
 
 

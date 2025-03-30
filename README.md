@@ -159,9 +159,7 @@ The program handles files as follows:
 
 ## 🔍 Things to Improve
 
-Here are some ideas to take Payroll Hub to the next level:
-
-> **Tip**: Contributions are welcome! Fork the repo and submit a pull request with your improvements. 🚀
+Hi po Ms Kim, feel free to edit what improvements should we add. 🚀
 
 ---
 

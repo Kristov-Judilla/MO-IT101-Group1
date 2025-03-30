@@ -122,7 +122,7 @@ The program writes output to:
 | Name                    | GitHub Handle                                      |
 |-------------------------|----------------------------------------------------|
 | Kristov Judilla         | [@Kristov-Judilla](https://github.com/Kristov-Judilla) |
-| (Add other team members)| [@aasarmiento](https://github.com/aasarmiento)              |
+| Abigail Ann Sarmiento| [@aasarmiento](https://github.com/aasarmiento)              |
 | 
 
 

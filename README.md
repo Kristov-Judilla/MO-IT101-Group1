@@ -113,27 +113,16 @@ Would you like to process another employee? (yes/no):
 
 Here’s what makes Payroll Hub awesome:
 
-- ⏱️ **Worked Hours Calculation**: Tracks hours per pay period, including overtime at 1.25x rate  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- ⏱️ **Worked Hours Calculation**: Tracks hours per pay period, including overtime at 1.25x rate   
 - 💰 **Gross Pay Computation**: Includes worked hours, overtime, and holiday pay  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
 - 🎉 **Holiday Support**: Covers all Philippine holidays (regular and special non-working) for 2023-2025  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
 - 📅 **Flexible Pay Periods**: Supports pay periods spanning across years  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
 - ⏰ **Tardiness Grace Period**: No deduction for tardiness ≤15 minutes  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
 - 📊 **Government Deductions**: Applies SSS, PhilHealth, Pag-IBIG, and withholding tax  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
-- 💸 **Net Pay Calculation**: Determines final pay after deductions  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
-- 📜 **CSV Output**: Saves payroll data to `MotorPHPayslip.csv`, including days late  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- 💸 **Net Pay Calculation**: Determines final pay after deductions   
+- 📜 **CSV Output**: Saves payroll data to `MotorPHPayslip.csv`, including days late    
 - ✅ **Input Validation**: Ensures valid dates, hours, tardiness, and days late  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
 - 📋 **Formatted Output**: Aligns columns for readability  
-  ![Progress](https://progress-bar.dev/100/?title=Completed)  
-
 ---
 
 ## 📂 File Handling

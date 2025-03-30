@@ -170,7 +170,7 @@ Meet the amazing team behind Payroll Hub:
 | Name                    | GitHub Handle                                      | Avatar                                      |
 |-------------------------|----------------------------------------------------|---------------------------------------------|
 | Kristofer Judilla         | [@Kristov-Judilla](https://github.com/Kristov-Judilla) | <img src="https://github.com/Kristov-Judilla.png" width="50" height="50"> |
-| Abigail Ann Sarmiento| [@aasarmiento]((https://github.com/aasarmiento/))               | <img src="https://github.com/handle.png" width="50" height="50"> |
+| Abigail Ann Sarmiento| [@aasarmiento](https://github.com/aasarmiento)          | <img src="https://github.com/handle.png" width="50" height="50"> |
 
 ---
 

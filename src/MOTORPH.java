@@ -2,8 +2,8 @@ import com.opencsv.CSVReader;
 import java.io.FileReader;
 import java.io.FileWriter;
 import java.io.IOException;
-import java.time.LocalDate;
-import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;hi
+mport java.time.format.DateTimeFormatter;
 import java.time.format.DateTimeParseException;
 import java.util.ArrayList;
 import java.util.List;
@@ -46,14 +46,10 @@ public class MOTORPH {
 
                 // Validate Start Date
                 while (startDate == null) {
-                    System.out.print("Enter start date (YYYY-MM-DD, within 2024): ");
+                    System.out.print("Enter start date (YYYY-MM-DD): ");
                     String startDateStr = sc.nextLine();
                     try {
                         startDate = LocalDate.parse(startDateStr, formatter);
-                        if (startDate.getYear() != 2024) {
-                            System.out.println("Error: Start date must be in 2024.");
-                            startDate = null;
-                        }
                     } catch (DateTimeParseException e) {
                         System.out.println("Error: Invalid date format. Please use YYYY-MM-DD.");
                     }
@@ -61,17 +57,11 @@ public class MOTORPH {
 
                 // Validate End Date
                 while (endDate == null) {
-                    System.out.print("Enter end date (YYYY-MM-DD, within 2024): ");
+                    System.out.print("Enter end date (YYYY-MM-DD): ");
                     String endDateStr = sc.nextLine();
                     try {
                         endDate = LocalDate.parse(endDateStr, formatter);
-                        if (endDate.getYear() != 2024) {
-                            System.out.println("Error: End date must be in 2024.");
-                            endDate = null;
-                        } else if (endDate.isAfter(LocalDate.of(2024, 12, 31))) {
-                            System.out.println("Error: End date cannot be after 2024-12-31.");
-                            endDate = null;
-                        } else if (endDate.isBefore(startDate)) {
+                        if (endDate.isBefore(startDate)) {
                             System.out.println("Error: End date cannot be before start date.");
                             endDate = null;
                         }
@@ -161,9 +151,29 @@ public class MOTORPH {
                                 }
                             }
 
-                            // Define all holidays in 2024
+                            // Define holidays for 2023, 2024, and 2025
                             List<Holiday> holidays = new ArrayList<>();
-                            // Regular Holidays
+                            // 2023 Regular Holidays
+                            holidays.add(new Holiday(LocalDate.of(2023, 1, 2), "New Year's Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 4, 6), "Maundy Thursday", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 4, 7), "Good Friday", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 4, 10), "Araw ng Kagitingan", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 5, 1), "Labor Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 6, 12), "Independence Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 8, 28), "National Heroes Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 11, 1), "All Saints' Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 11, 30), "Bonifacio Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 12, 25), "Christmas Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2023, 12, 30), "Rizal Day", true));
+                            // 2023 Special Non-Working Holidays
+                            holidays.add(new Holiday(LocalDate.of(2023, 1, 2), "New Year's Day (Special)", false));
+                            holidays.add(new Holiday(LocalDate.of(2023, 2, 25), "EDSA Revolution Anniversary", false));
+                            holidays.add(new Holiday(LocalDate.of(2023, 4, 8), "Black Saturday", false));
+                            holidays.add(new Holiday(LocalDate.of(2023, 8, 21), "Ninoy Aquino Day", false));
+                            holidays.add(new Holiday(LocalDate.of(2023, 11, 2), "All Souls' Day", false));
+                            holidays.add(new Holiday(LocalDate.of(2023, 12, 24), "Christmas Eve", false));
+                            holidays.add(new Holiday(LocalDate.of(2023, 12, 31), "Last Day of the Year", false));
+                            // 2024 Regular Holidays
                             holidays.add(new Holiday(LocalDate.of(2024, 1, 1), "New Year's Day", true));
                             holidays.add(new Holiday(LocalDate.of(2024, 3, 28), "Maundy Thursday", true));
                             holidays.add(new Holiday(LocalDate.of(2024, 3, 29), "Good Friday", true));
@@ -175,13 +185,32 @@ public class MOTORPH {
                             holidays.add(new Holiday(LocalDate.of(2024, 11, 30), "Bonifacio Day", true));
                             holidays.add(new Holiday(LocalDate.of(2024, 12, 25), "Christmas Day", true));
                             holidays.add(new Holiday(LocalDate.of(2024, 12, 30), "Rizal Day", true));
-                            // Special Non-Working Holidays
+                            // 2024 Special Non-Working Holidays
                             holidays.add(new Holiday(LocalDate.of(2024, 2, 10), "Chinese New Year", false));
                             holidays.add(new Holiday(LocalDate.of(2024, 3, 30), "Black Saturday", false));
                             holidays.add(new Holiday(LocalDate.of(2024, 8, 21), "Ninoy Aquino Day", false));
                             holidays.add(new Holiday(LocalDate.of(2024, 11, 2), "All Souls' Day", false));
                             holidays.add(new Holiday(LocalDate.of(2024, 12, 24), "Christmas Eve", false));
                             holidays.add(new Holiday(LocalDate.of(2024, 12, 31), "Last Day of the Year", false));
+                            // 2025 Regular Holidays (Projected)
+                            holidays.add(new Holiday(LocalDate.of(2025, 1, 1), "New Year's Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2025, 4, 17), "Maundy Thursday", true));
+                            holidays.add(new Holiday(LocalDate.of(2025, 4, 18), "Good Friday", true));
+                            holidays.add(new Holiday(LocalDate.of(2025, 4, 9), "Araw ng Kagitingan", true));
+                            holidays.add(new Holiday(LocalDate.of(2025, 5, 1), "Labor Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2025, 6, 12), "Independence Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2025, 8, 25), "National Heroes Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2025, 11, 1), "All Saints' Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2025, 12, 1), "Bonifacio Day", true)); // Moved from Nov 30 (Sunday)
+                            holidays.add(new Holiday(LocalDate.of(2025, 12, 25), "Christmas Day", true));
+                            holidays.add(new Holiday(LocalDate.of(2025, 12, 30), "Rizal Day", true));
+                            // 2025 Special Non-Working Holidays (Projected)
+                            holidays.add(new Holiday(LocalDate.of(2025, 1, 29), "Chinese New Year", false));
+                            holidays.add(new Holiday(LocalDate.of(2025, 4, 19), "Black Saturday", false));
+                            holidays.add(new Holiday(LocalDate.of(2025, 8, 21), "Ninoy Aquino Day", false));
+                            holidays.add(new Holiday(LocalDate.of(2025, 11, 2), "All Souls' Day", false));
+                            holidays.add(new Holiday(LocalDate.of(2025, 12, 24), "Christmas Eve", false));
+                            holidays.add(new Holiday(LocalDate.of(2025, 12, 31), "Last Day of the Year", false));
 
                             // Check holidays within the pay period
                             double totalHolidayPay = 0.0;
@@ -322,8 +351,8 @@ public class MOTORPH {
                             // Save to CSV
                             String outputCsv = "C:\\Users\\Kristov\\Documents\\COMPROG1\\Prog 1 MotorPH\\MOTORPHPAYSLIP.csv";
                             try (FileWriter writer = new FileWriter(outputCsv, true)) {
-                                writer.append("Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay\n");
-                                writer.append(empId + "," + fullName + "," + position + "," + startDate + " to " + endDate + "," + grossPay + "," + totalDeductions + "," + netPay + "\n");
+                                writer.append("Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late\n");
+                                writer.append(empId + "," + fullName + "," + position + "," + startDate + " to " + endDate + "," + grossPay + "," + totalDeductions + "," + netPay + "," + daysLate + "\n");
                                 System.out.println("PAYROLL data saved to " + outputCsv + "\n");
                             } catch (IOException e) {
                                 System.out.println("Error saving to CSV: " + e.getMessage() + "\n");

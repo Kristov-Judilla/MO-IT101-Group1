@@ -1,21 +1,57 @@
-# MO-IT101-Group1
+<p align="center">
+  <img src="https://github.com/Kristov-Judilla/MO-IT101-Group1/raw/main/assets/banner.png" alt="Payroll Hub Banner" width="100%">
+</p>
 
-A collection of projects for the MO-IT101 Group 1 team.
+<h1 align="center">🌟 MO-IT101-Group1 🌟</h1>
 
-## Payroll Hub (MotorPH Payroll System)
+<p align="center">
+  A collection of awesome projects by the MO-IT101 Group 1 team! 🚀
+</p>
 
-Payroll Hub is a simple Java-based payroll system for MotorPH employees that:
+<p align="center">
+  <img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java" alt="Java">
+  <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
+  <img src="https://img.shields.io/badge/Status-Completed-green?style=for-the-badge" alt="Status">
+  <img src="https://img.shields.io/github/contributors/Kristov-Judilla/MO-IT101-Group1?style=for-the-badge" alt="Contributors">
+</p>
 
-- Calculates work hours with a 15-minute grace period for tardiness
-- Computes gross pay based on worked hours, overtime, and holiday pay
-- Applies government deductions (SSS, PhilHealth, Pag-IBIG, withholding tax)
-- Determines net pay after deductions
-- Reads employee data from CSV files for processing
-- Saves payroll data to a CSV file for record-keeping
+---
 
-📊 **Expected Output**
+## 📋 Table of Contents
 
-Below is an example output for Employee ID 10001 with a pay period from 2024-06-03 to 2024-06-18, with 15 minutes of tardiness (within the grace period) and 8 hours worked on Independence Day (2024-06-12):
+- [Payroll Hub (MotorPH Payroll System)](#payroll-hub-motorph-payroll-system)
+- [Expected Output](#expected-output)
+- [Features](#features)
+- [File Handling](#file-handling)
+- [File Structure](#file-structure)
+- [Project Status](#project-status)
+- [Things to Improve](#things-to-improve)
+- [Contributors](#contributors)
+- [How to Use](#how-to-use)
+- [Connect with Us](#connect-with-us)
+
+---
+
+## 💼 Payroll Hub (MotorPH Payroll System)
+
+Payroll Hub is a sleek and efficient Java-based payroll system designed for MotorPH employees. It simplifies payroll processing with the following capabilities:
+
+- ⏱️ Calculates work hours with a 15-minute grace period for tardiness
+- 💰 Computes gross pay based on worked hours, overtime, and holiday pay
+- 📊 Applies government deductions (SSS, PhilHealth, Pag-IBIG, withholding tax)
+- 💸 Determines net pay after deductions
+- 📂 Reads employee data from CSV files for processing
+- 📜 Saves payroll data to a CSV file for record-keeping
+
+---
+
+## 📸 Expected Output
+
+Here’s what you’ll see when you run Payroll Hub for Employee ID 10001, with a pay period from 2024-06-03 to 2024-06-18, 15 minutes of tardiness (within the grace period), and 8 hours worked on Independence Day (2024-06-12):
+
+<p align="center">
+  <img src="https://github.com/Kristov-Judilla/MO-IT101-Group1/raw/main/assets/screenshot.png" alt="Payroll Hub Output Screenshot" width="80%">
+</p>
 
 ```
 =====================================
@@ -71,28 +107,48 @@ Thank you for using MotorPH Payroll System!
 Would you like to process another employee? (yes/no): 
 ```
 
-⚙️ **Features**
+---
 
-✅ Calculates worked hours per pay period, including overtime (1.25x rate)  
-✅ Computes gross pay based on worked hours, overtime, and holiday pay  
-✅ Supports all Philippine holidays (regular and special non-working) for 2023, 2024, and 2025  
-✅ Allows flexible pay periods that can span across years  
-✅ Applies a 15-minute grace period for tardiness (no deduction if ≤15 minutes)  
-✅ Applies government deductions (SSS, PhilHealth, Pag-IBIG, withholding tax)  
-✅ Determines net pay after deductions  
-✅ Saves payroll data to `MotorPHPayslip.csv`, including days late  
-✅ Includes input validation for dates, hours, tardiness, and days late  
-✅ Formats output for readability with aligned columns  
+## ⚙️ Features
 
-📂 **File Handling**
+Here’s what makes Payroll Hub awesome:
 
-The program reads input from:  
-📌 `Employee.csv` (Employee data including hourly rate and allowances)  
+- ⏱️ **Worked Hours Calculation**: Tracks hours per pay period, including overtime at 1.25x rate  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- 💰 **Gross Pay Computation**: Includes worked hours, overtime, and holiday pay  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- 🎉 **Holiday Support**: Covers all Philippine holidays (regular and special non-working) for 2023-2025  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- 📅 **Flexible Pay Periods**: Supports pay periods spanning across years  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- ⏰ **Tardiness Grace Period**: No deduction for tardiness ≤15 minutes  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- 📊 **Government Deductions**: Applies SSS, PhilHealth, Pag-IBIG, and withholding tax  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- 💸 **Net Pay Calculation**: Determines final pay after deductions  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- 📜 **CSV Output**: Saves payroll data to `MotorPHPayslip.csv`, including days late  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- ✅ **Input Validation**: Ensures valid dates, hours, tardiness, and days late  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
+- 📋 **Formatted Output**: Aligns columns for readability  
+  ![Progress](https://progress-bar.dev/100/?title=Completed)  
 
-The program writes output to:  
-📌 `MotorPHPayslip.csv` (Payroll data in CSV format)  
+---
 
-🏗 **File Structure**
+## 📂 File Handling
+
+The program handles files as follows:
+
+- **Input**:  
+  📌 `Employee.csv` (Employee data including hourly rate and allowances)  
+
+- **Output**:  
+  📌 `MotorPHPayslip.csv` (Payroll data in CSV format)  
+
+---
+
+## 🏗️ File Structure
 
 ```
 /MO-IT101-Group1
@@ -101,28 +157,50 @@ The program writes output to:
 │   │   └── MotorPH.java
 │   ├── data/
 │   │   └── Employee.csv
+│   ├── assets/
+│   │   ├── banner.png
+│   │   └── screenshot.png
 │   └── MotorPHPayslip.csv
 ├── README.md
 ├── .gitignore
 └── LICENSE
 ```
 
-🚧 **Project Status**
+---
 
-🔧 Completed
+## 🚧 Project Status
 
-🔍 **Things to Improve**
+🔧 **Completed**  
+![Project Completion](https://progress-bar.dev/100/?title=Project%20Completion&color=green)
 
-👥 **Contributors**
+---
 
-| Name                    | GitHub Handle                                      |
-|-------------------------|----------------------------------------------------|
-| Kristov Judilla         | [@Kristov-Judilla](https://github.com/Kristov-Judilla) |
-| Abigail Ann Sarmiento| [@aasarmiento](https://github.com/aasarmiento)              |
+## 🔍 Things to Improve
 
+Here are some ideas to take Payroll Hub to the next level:
 
+- 🧮 Implement dynamic deduction calculations based on gross pay and year  
+- 📅 Load holidays dynamically from a file or database  
+- ⏳ Add support for multiple employee rate changes over time  
 
-🎯 **How to Use**
+> **Tip**: Contributions are welcome! Fork the repo and submit a pull request with your improvements. 🚀
+
+---
+
+## 👥 Contributors
+
+Meet the amazing team behind Payroll Hub:
+
+| Name                    | GitHub Handle                                      | Avatar                                      |
+|-------------------------|----------------------------------------------------|---------------------------------------------|
+| Kristov Judilla         | [@Kristov-Judilla](https://github.com/Kristov-Judilla) | <img src="https://github.com/Kristov-Judilla.png" width="50" height="50"> |
+| (Add other team members)| [@handle](https://github.com/handle)               | <img src="https://github.com/handle.png" width="50" height="50"> |
+
+---
+
+## 🎯 How to Use
+
+Get started with Payroll Hub in just a few steps:
 
 1️⃣ **Clone this repository**
 
@@ -143,3 +221,18 @@ git clone https://github.com/Kristov-Judilla/MO-IT101-Group1.git
 - Follow the prompts to enter the employee ID, pay period, hours worked, overtime, tardiness, days late, and holiday work details.
 - View the payroll statement in the console and check `MotorPHPayslip.csv` for saved data.
 - **Note**: Ensure `MotorPHPayslip.csv` is not open in another application (e.g., Excel) while running the program, as this may cause a "file in use" error when saving the payroll data.
+
+---
+
+## 🌐 Connect with Us
+
+We’d love to hear from you! Connect with the MO-IT101 Group 1 team:
+
+<p align="center">
+  <a href="https://github.com/Kristov-Judilla"><img src="https://img.shields.io/badge/GitHub-Kristov--Judilla-181717?style=social&logo=github" alt="Kristov Judilla GitHub"></a>
+  <!-- Add more team members' GitHub links here -->
+</p>
+
+<p align="center">
+  Made with ❤️ by MO-IT101 Group 1
+</p>

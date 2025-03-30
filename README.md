@@ -156,17 +156,10 @@ The program handles files as follows:
 ## 🚧 Project Status
 
 🔧 **Completed**  
-![Project Completion](https://progress-bar.dev/100/?title=Project%20Completion&color=green)
-
----
 
 ## 🔍 Things to Improve
 
 Here are some ideas to take Payroll Hub to the next level:
-
-- 🧮 Implement dynamic deduction calculations based on gross pay and year  
-- 📅 Load holidays dynamically from a file or database  
-- ⏳ Add support for multiple employee rate changes over time  
 
 > **Tip**: Contributions are welcome! Fork the repo and submit a pull request with your improvements. 🚀
 

@@ -17,22 +17,22 @@
 
 ---
 
-## 📋 Table of Contents
+## 🗺️ Navigation Guide
 
-- [Payroll Hub (MotorPH Payroll System)](#payroll-hub-motorph-payroll-system)
-- [Expected Output](#expected-output)
-- [Features](#features)
-- [File Handling](#file-handling)
-- [File Structure](#file-structure)
-- [Project Status](#project-status)
-- [Things to Improve](#things-to-improve)
-- [Contributors](#contributors)
-- [How to Use](#how-to-use)
-- [Connect with Us](#connect-with-us)
+- 🌟 [Explore Payroll Hub: MotorPH Payroll System](#explore-payroll-hub-motorph-payroll-system)  
+- 📺 [See It in Action: Sample Output](#see-it-in-action-sample-output)  
+- 🛠️ [Discover the Features](#discover-the-features)  
+- 📁 [Understand File Handling](#understand-file-handling)  
+- 🏛️ [Project File Layout](#project-file-layout)  
+- 📈 [Current Project Progress](#current-project-progress)  
+- 💡 [Ideas for Enhancement](#ideas-for-enhancement)  
+- 👥 [Meet the Team](#meet-the-team)  
+- 🚀 [Get Started: Usage Instructions](#get-started-usage-instructions)  
+- 🌐 [Join the Community](#join-the-community)  
 
 ---
 
-## 💼 Payroll Hub (MotorPH Payroll System)
+## 🌟 Explore Payroll Hub: MotorPH Payroll System
 
 Payroll Hub is a sleek and efficient Java-based payroll system designed for MotorPH employees. It simplifies payroll processing with the following capabilities:
 
@@ -45,7 +45,7 @@ Payroll Hub is a sleek and efficient Java-based payroll system designed for Moto
 
 ---
 
-## 📸 Expected Output
+## 📺 See It in Action: Sample Output
 
 Here’s what you’ll see when you run Payroll Hub for Employee ID 10001, with a pay period from 2024-06-03 to 2024-06-18, 15 minutes of tardiness (within the grace period), and 8 hours worked on Independence Day (2024-06-12):
 
@@ -105,7 +105,7 @@ Would you like to process another employee? (yes/no):
 
 ---
 
-## ⚙️ Features
+## 🛠️ Discover the Features
 
 Here’s what makes Payroll Hub awesome:
 
@@ -119,9 +119,10 @@ Here’s what makes Payroll Hub awesome:
 - 📜 **CSV Output**: Saves payroll data to `MotorPHPayslip.csv`, including days late    
 - ✅ **Input Validation**: Ensures valid dates, hours, tardiness, and days late  
 - 📋 **Formatted Output**: Aligns columns for readability  
+
 ---
 
-## 📂 File Handling
+## 📁 Understand File Handling
 
 The program handles files as follows:
 
@@ -133,7 +134,7 @@ The program handles files as follows:
 
 ---
 
-## 🏗️ File Structure
+## 🏛️ Project File Layout
 
 ```
 /MO-IT101-Group1
@@ -153,28 +154,30 @@ The program handles files as follows:
 
 ---
 
-## 🚧 Project Status
+## 📈 Current Project Progress
 
 🔧 **Completed**  
 
-## 🔍 Things to Improve
+---
+
+## 💡 Ideas for Enhancement
 
 Hi po Ms Kim, feel free to edit what improvements should we add. 🚀
 
 ---
 
-## 👥 Contributors
+## 👥 Meet the Team
 
 Meet the amazing team behind Payroll Hub:
 
 | Name                    | GitHub Handle                                      | Avatar                                      |
 |-------------------------|----------------------------------------------------|---------------------------------------------|
-| Kristofer Judilla         | [@Kristov-Judilla](https://github.com/Kristov-Judilla) | <img src="https://github.com/Kristov-Judilla.png" width="50" height="50"> |
-| Abigail Ann Sarmiento| [@aasarmiento](https://github.com/aasarmiento)          | <img src="https://github.com/handle.png" width="50" height="50"> |
+| Kristofer Judilla       | [@Kristov-Judilla](https://github.com/Kristov-Judilla) | <img src="https://github.com/Kristov-Judilla.png" width="50" height="50"> |
+| Abigail Ann Sarmiento   | [@aasarmiento](https://github.com/aasarmiento)     | <img src="https://github.com/aasarmiento.png" width="50" height="50"> |
 
 ---
 
-## 🎯 How to Use
+## 🚀 Get Started: Usage Instructions
 
 Get started with Payroll Hub in just a few steps:
 
@@ -200,7 +203,7 @@ git clone https://github.com/Kristov-Judilla/MO-IT101-Group1.git
 
 ---
 
-## 🌐 Connect with Us
+## 🌐 Thank you!
 
 We’d love to hear from you! Connect with the MO-IT101 Group 1 team:
 

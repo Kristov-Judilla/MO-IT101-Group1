@@ -10,11 +10,11 @@ import java.util.List;
 import java.util.Scanner;
 
 public class MOTORPH {
-    // Class to store holiday information
+    // A class to hold details about holidays
     static class Holiday {
         LocalDate date;
         String name;
-        boolean isRegular; // true for regular holidays, false for special non-working
+        boolean isRegular; // True if it's a regular holiday, false if it's a special non-working day
 
         Holiday(LocalDate date, String name, boolean isRegular) {
             this.date = date;
@@ -25,10 +25,10 @@ public class MOTORPH {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        String csvFile = "C:\\Users\\Kristov\\Documents\\COMPROG1\\Prog 1 MotorPH\\Employee.csv"; // Path to Employee CSV
+        String csvFile = "C:\\Users\\Kristov\\Documents\\COMPROG1\\Prog 1 MotorPH\\Employee.csv"; // Location of the Employee data file
         boolean continueProcessing = true;
 
-        // Welcome Message
+        // Display a welcome message to the user
         System.out.println("=====================================");
         System.out.println("   Welcome to MotorPH Payroll System   ");
         System.out.println("=====================================");
@@ -37,14 +37,14 @@ public class MOTORPH {
 
         while (continueProcessing) {
             try {
-                // Input with Validation
+                // Ask for user input and check if it's valid
                 System.out.print("Enter Employee ID: ");
                 String empId = sc.nextLine();
 
                 LocalDate startDate = null, endDate = null;
                 DateTimeFormatter formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd");
 
-                // Validate Start Date
+                // Keep asking for the start date until a valid date is entered
                 while (startDate == null) {
                     System.out.print("Enter start date (YYYY-MM-DD): ");
                     String startDateStr = sc.nextLine();
@@ -55,7 +55,7 @@ public class MOTORPH {
                     }
                 }
 
-                // Validate End Date
+                // Keep asking for the end date until a valid date is entered, ensuring it's not before the start date
                 while (endDate == null) {
                     System.out.print("Enter end date (YYYY-MM-DD): ");
                     String endDateStr = sc.nextLine();
@@ -74,24 +74,24 @@ public class MOTORPH {
                     String[] row;
                     boolean found = false;
 
-                    // Skip header row
+                    // Skip the first row since it contains column headers
                     reader.readNext();
 
-                    // Search Employee ID in CSV
+                    // Look for the employee ID in the CSV file
                     while ((row = reader.readNext()) != null) {
-                        if (row[0].equals(empId)) { // Match EmployeeID
+                        if (row[0].equals(empId)) { // Check if the employee ID matches
                             found = true;
 
-                            // Analyze Employee Data
-                            String fullName = row[1]; // Full Name (Garcia Manuel III)
-                            String position = row[2]; // Position (Chief Executive Officer)
+                            // Gather employee information from the CSV row
+                            String fullName = row[1]; // Employee's full name (e.g., Garcia Manuel III)
+                            String position = row[2]; // Employee's job title (e.g., Chief Executive Officer)
                             double hourlyRate = Double.parseDouble(row[8]);
                             double riceSubsidy = Double.parseDouble(row[4]);
                             double phoneAllowance = Double.parseDouble(row[5]);
                             double clothingAllowance = Double.parseDouble(row[6]);
                             double semiMonthlyAllowance = (riceSubsidy + phoneAllowance + clothingAllowance) / 2;
 
-                            // Additional Inputs with Validation
+                            // Ask for additional details and ensure they are valid numbers
                             double totalHours = -1, overtimeHours = -1, tardinessMinutes = -1;
                             int daysLate = -1;
 
@@ -104,7 +104,7 @@ public class MOTORPH {
                                     }
                                 } catch (Exception e) {
                                     System.out.println("Error: Please enter a valid number.");
-                                    sc.nextLine(); // Clear input
+                                    sc.nextLine(); // Clear the input to avoid errors
                                     totalHours = -1;
                                 }
                             }
@@ -151,7 +151,7 @@ public class MOTORPH {
                                 }
                             }
 
-                            // Define holidays for 2023, 2024, and 2025
+                            // List of holidays for the years 2023, 2024, and 2025
                             List<Holiday> holidays = new ArrayList<>();
                             // 2023 Regular Holidays
                             holidays.add(new Holiday(LocalDate.of(2023, 1, 2), "New Year's Day", true));
@@ -212,7 +212,7 @@ public class MOTORPH {
                             holidays.add(new Holiday(LocalDate.of(2025, 12, 24), "Christmas Eve", false));
                             holidays.add(new Holiday(LocalDate.of(2025, 12, 31), "Last Day of the Year", false));
 
-                            // Check holidays within the pay period
+                            // Look for holidays that fall within the selected pay period
                             double totalHolidayPay = 0.0;
                             double totalOvertimeHolidayPay = 0.0;
                             double totalHolidayHoursWorked = 0.0;
@@ -222,7 +222,7 @@ public class MOTORPH {
                                 LocalDate holidayDate = holiday.date;
                                 boolean includesHoliday = !holidayDate.isBefore(startDate) && !holidayDate.isAfter(endDate);
                                 if (includesHoliday) {
-                                    sc.nextLine(); // Clear buffer
+                                    sc.nextLine(); // Clear any leftover input
                                     System.out.print("Did the employee work on " + holidayDate + " (" + holiday.name + ")? (yes/no): ");
                                     String workedOnHoliday = sc.nextLine().trim().toLowerCase();
 
@@ -247,37 +247,37 @@ public class MOTORPH {
                                             }
                                         }
 
-                                        // Holiday Pay for first 8 hours
+                                        // Calculate holiday pay for the first 8 hours
                                         holidayBaseHours = Math.min(holidayHoursWorked, 8);
                                         if (holiday.isRegular) {
-                                            // Regular holiday: 200% rate
+                                            // Regular holiday: Pay is doubled (200% rate)
                                             holidayPay = holidayBaseHours * hourlyRate * 2;
-                                            // Overtime on Regular Holiday (beyond 8 hours, 260% rate)
+                                            // Overtime on a regular holiday (beyond 8 hours, 260% rate)
                                             overtimeHoursOnHoliday = Math.max(holidayHoursWorked - 8, 0);
                                             overtimeHolidayPay = overtimeHoursOnHoliday * hourlyRate * 2.6;
                                         } else {
-                                            // Special non-working holiday: 130% rate
+                                            // Special non-working holiday: Pay is 130% of the regular rate
                                             holidayPay = holidayBaseHours * hourlyRate * 1.3;
-                                            // Overtime on Special Non-Working Holiday (beyond 8 hours, 169% rate)
+                                            // Overtime on a special non-working holiday (beyond 8 hours, 169% rate)
                                             overtimeHoursOnHoliday = Math.max(holidayHoursWorked - 8, 0);
                                             overtimeHolidayPay = overtimeHoursOnHoliday * hourlyRate * 1.69;
                                         }
 
-                                        // Store details for output
+                                        // Save holiday details to display later
                                         String holidayType = holiday.isRegular ? "Regular" : "Special";
                                         holidayDetails.add(String.format("%-40s%-15.2fP %,9.2f", "HOLIDAY PAY (" + holiday.name + ", " + holidayType + ")", holidayBaseHours, holidayPay));
                                         if (overtimeHolidayPay > 0) {
                                             holidayDetails.add(String.format("%-40s%-15.2fP %,9.2f", "OVERTIME ON HOLIDAY (" + holiday.name + ", " + holidayType + ")", overtimeHoursOnHoliday, overtimeHolidayPay));
                                         }
                                     } else {
-                                        // If not worked
+                                        // If the employee didn’t work on the holiday
                                         if (holiday.isRegular) {
-                                            // Regular holiday: 100% of daily wage (assuming 8-hour day)
+                                            // Regular holiday: Employee gets paid for an 8-hour day
                                             holidayPay = hourlyRate * 8;
                                             String holidayType = "Regular";
                                             holidayDetails.add(String.format("%-40s%-15sP %,9.2f", "HOLIDAY PAY (" + holiday.name + ", " + holidayType + ")", "", holidayPay));
                                         }
-                                        // Special non-working holiday: No pay if not worked
+                                        // Special non-working holiday: No pay if the employee didn’t work
                                     }
 
                                     totalHolidayPay += holidayPay;
@@ -286,16 +286,16 @@ public class MOTORPH {
                                 }
                             }
 
-                            // Payroll Calculations
-                            // Adjust total hours to exclude holiday hours to avoid double-counting
+                            // Calculate the employee’s pay
+                            // Subtract holiday hours from total hours to avoid counting them twice
                             double adjustedTotalHours = totalHours - totalHolidayHoursWorked;
-                            if (adjustedTotalHours < 0) adjustedTotalHours = 0; // Prevent negative hours
+                            if (adjustedTotalHours < 0) adjustedTotalHours = 0; // Ensure hours don’t go negative
 
                             double regularPay = adjustedTotalHours * hourlyRate;
-                            double overtimeRate = hourlyRate * 1.25; // Overtime at 1.25x rate
+                            double overtimeRate = hourlyRate * 1.25; // Overtime pay is 1.25 times the regular rate
                             double overtimePay = overtimeHours * overtimeRate;
 
-                            // Tardiness Deduction: Convert minutes to hours, waive if <= 15 minutes
+                            // Calculate tardiness deduction: Convert minutes to hours, but no deduction if 15 minutes or less
                             double tardinessDeduction = 0.0;
                             if (tardinessMinutes > 15) {
                                 double tardinessHours = tardinessMinutes / 60.0; // Convert minutes to hours
@@ -304,17 +304,17 @@ public class MOTORPH {
 
                             double grossPay = regularPay + overtimePay + totalHolidayPay + totalOvertimeHolidayPay + semiMonthlyAllowance;
 
-                            // Deductions (using fixed values to match the desired output)
-                            double sss = 1125.00; // Fixed as per output
-                            double philHealth = 515.69; // Fixed as per output
-                            double pagIbig = 100.00; // Fixed as per output
-                            double withholdingTax = 261.07; // Fixed as per output
+                            // Apply deductions (using fixed amounts to match the example output)
+                            double sss = 1125.00; // Fixed SSS deduction
+                            double philHealth = 515.69; // Fixed PhilHealth deduction
+                            double pagIbig = 100.00; // Fixed Pag-IBIG deduction
+                            double withholdingTax = 261.07; // Fixed withholding tax
                             double totalDeductions = tardinessDeduction + sss + philHealth + pagIbig + withholdingTax;
 
-                            // Net Pay
+                            // Calculate the final pay after deductions
                             double netPay = grossPay - totalDeductions;
 
-                            // Print Output with Enhanced Formatting
+                            // Display the payroll details in a neatly formatted table
                             System.out.println("\n=========================================");
                             System.out.println("           MOTORPH PAYROLL               ");
                             System.out.println("=========================================\n");
@@ -348,7 +348,7 @@ public class MOTORPH {
                             System.out.printf("NET PAY: P%,.2f%n", netPay);
                             System.out.println("=========================================\n");
 
-                            // Save to CSV
+                            // Save the payroll details to a CSV file
                             String outputCsv = "C:\\Users\\Kristov\\Documents\\COMPROG1\\Prog 1 MotorPH\\MOTORPHPAYSLIP.csv";
                             try (FileWriter writer = new FileWriter(outputCsv, true)) {
                                 writer.append("Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late\n");
@@ -358,7 +358,7 @@ public class MOTORPH {
                                 System.out.println("Error saving to CSV: " + e.getMessage() + "\n");
                             }
 
-                            // Closing Message
+                            // Show a thank-you message
                             System.out.println("Thank you for using MotorPH Payroll System!");
                             break;
                         }
@@ -374,8 +374,8 @@ public class MOTORPH {
                     System.err.println("An error occurred: " + e.getMessage() + "\n");
                 }
 
-                // Ask to Continue
-                sc.nextLine(); // Clear buffer
+                // Ask if the user wants to process another employee
+                sc.nextLine(); // Clear any leftover input
                 System.out.print("Would you like to process another employee? (yes/no): ");
                 String response = sc.nextLine().trim().toLowerCase();
                 if (!response.equals("yes")) {
@@ -384,11 +384,12 @@ public class MOTORPH {
                 System.out.println();
             } catch (Exception e) {
                 System.out.println("An unexpected error occurred: " + e.getMessage() + "\n");
-                sc.nextLine(); // Clear buffer
+                sc.nextLine(); // Clear any leftover input
             }
         }
 
         sc.close();
+        // Display a closing message when the program ends
         System.out.println("=====================================");
         System.out.println("   MotorPH Payroll System Closed   ");
         System.out.println("=====================================");

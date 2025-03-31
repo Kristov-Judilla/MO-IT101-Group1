@@ -27,8 +27,9 @@
 - 📈 [Current Project Progress](#current-project-progress)  
 - 💡 [Ideas for Enhancement](#ideas-for-enhancement)  
 - 👥 [Meet the Team](#meet-the-team)  
+- 🧪 [Review Test Cases](#test-cases)  
 - 🚀 [Get Started: Usage Instructions](#get-started-usage-instructions)  
-- 🌐 [Join the Community](#join-the-community)  
+- 🌐 [Join the Community](#join-the-community)
 
 ---
 

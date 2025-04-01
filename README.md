@@ -5,7 +5,7 @@
 <h1 align="center">🌟 MO-IT101-Group1 🌟</h1>
 
 <p align="center">
- 🚀 Explore the Incredible Creations of MO-IT101 Group 1! 🎉
+ 🚀 Explore the Incredible Creations of MO-IT101 Group 1! 🎉 We are a group of enthusiastic beginners diving into the world of programming. Our goal is to learn, collaborate, and build awesome projects together!
 </p>
 
 <p align="center">

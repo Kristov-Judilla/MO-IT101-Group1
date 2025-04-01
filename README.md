@@ -4,6 +4,7 @@
   <img src="https://github.com/Kristov-Judilla/MO-IT101-Group1/raw/main/assets/banner.png" alt="Payroll Hub Banner" width="100%">
 </p>
 
+### <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="45" /> About Us:
 <h1 align="center">🌟 MO-IT101-Group1 🌟</h1>
 
 <p align="center">

@@ -5,7 +5,7 @@
 <h1 align="center">🌟 MO-IT101-Group1 🌟</h1>
 
 <p align="center">
-  A collection of awesome projects by the MO-IT101 Group 1 team! 🚀
+ 🚀 Explore the Incredible Creations of MO-IT101 Group 1! 🎉
 </p>
 
 <p align="center">

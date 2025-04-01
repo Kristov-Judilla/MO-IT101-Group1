@@ -191,10 +191,15 @@ Hi po Ms Kim, feel free to edit what improvements should we add. 🚀
 
 Meet the amazing team behind Payroll Hub:
 
-| Name                    | GitHub Handle                                      | Avatar                                      |
-|-------------------------|----------------------------------------------------|---------------------------------------------|
-| Kristofer Judilla       | [@Kristov-Judilla](https://github.com/Kristov-Judilla) | <img src="https://github.com/Kristov-Judilla.png" width="50" height="50"> |
-| Abigail Ann Sarmiento   | [@aasarmiento](https://github.com/aasarmiento)     | <img src="https://github.com/aasarmiento.png" width="50" height="50"> |
+# Contributors
+
+This project acknowledges the contributions of the following individuals. Below is a list of contributors with their GitHub handles, avatars, and roles.
+
+| Name                  | GitHub Handle       | Avatar            | Role              |
+|-----------------------|---------------------|-------------------|-------------------|
+| Kristofer Judilla     | [@Kristov-Judilla](https://github.com/Kristov-Judilla)   |     <img src="https://github.com/Kristov-Judilla.png" width="50" height="50">               |      Developer             |
+| Abigail Ann Sarmiento |  [@aasarmiento](https://github.com/aasarmiento)        |     <img src="https://github.com/aasarmiento.png" width="50" height="50">               |                QA Analyst   |
+
 
 ---
 

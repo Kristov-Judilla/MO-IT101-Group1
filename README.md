@@ -11,12 +11,29 @@
  🚀 Explore the Incredible Creations of MO-IT101 Group 1! 🎉 We are a group of enthusiastic beginners diving into the world of programming. Our goal is to learn, collaborate, and build awesome projects together!
 </p>
 
+
+## 👋 Who Are We?
+We are a group of beginner programmers excited to learn Java as part of our **Computer Programming 1** journey! Our goal is to build strong fundamentals, work on fun projects, and support each other as we grow into confident developers. 💡
+
+
+
+## 🎥 Coding in Action!
+![Java Coding GIF](https://media.giphy.com/media/qgQUggAC3Pfv687qPC/giphy.gif)
+
+
+📩 Contact us: 
+
+Happy Coding! 💻🔥
 <p align="center">
   <img src="https://img.shields.io/badge/Java-17-orange?style=for-the-badge&logo=java" alt="Java">
   <img src="https://img.shields.io/badge/License-MIT-blue?style=for-the-badge" alt="License">
   <img src="https://img.shields.io/badge/Status-Completed-green?style=for-the-badge" alt="Status">
   <img src="https://img.shields.io/github/contributors/Kristov-Judilla/MO-IT101-Group1?style=for-the-badge" alt="Contributors">
 </p>
+
+---
+
+
 
 ---
 

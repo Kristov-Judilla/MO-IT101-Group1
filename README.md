@@ -70,8 +70,17 @@ Payroll Hub is a sleek and efficient Java-based payroll system designed for Moto
 
 Here’s what you’ll see when you run Payroll Hub for Employee ID 10001, with a pay period from 2024-06-03 to 2024-06-18, 15 minutes of tardiness (within the grace period), and 8 hours worked on Independence Day (2024-06-12):
 
-<p align="center"> <img src="https://github.com/Kristov-Judilla/MO-IT101-Group1/raw/main/assets/screenshot.gif" alt="Payroll Hub Output Screenshot" width="80%"> </p>
+# MotorPH Payroll System
 
+Welcome to the MotorPH Payroll System, a Java-based application for processing employee payrolls efficiently.
+
+## Payroll Hub Output Screenshot
+
+<p align="center">
+  <img src="https://github.com/Kristov-Judilla/MO-IT101-Group1/raw/main/assets/screenshot.gif" alt="Payroll Hub Output Screenshot" width="100%">
+</p>
+
+---
 ```
 =====================================
    Welcome to MotorPH Payroll System   

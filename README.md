@@ -193,10 +193,6 @@ Below are the test cases for the MotorPH Payroll System, covering various scenar
 
 
 
-# MotorPH Payroll System Test Cases
-
-Below is a table of test cases for the MotorPH Payroll System, including scenarios, test descriptions, data, steps, and results.
-
 | Scenario   | Test Case ID | Test Case Description              | Test Data                                                                 | Test Steps                                              | Expected Result                                    | Actual Result                                      | Test Result |
 |------------|--------------|------------------------------------|---------------------------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------|----------------------------------------------------|-------------|
 | Scenario 1 | 1            | Launch the payroll application     | Path: `C:\Users\Kristov\Documents\COMPROG1\Prog 1 MotorPH\Employee.csv`   | 1. Open NetBeans.<br>2. Open MotorPH project.<br>3. Run `MOTORPH.java`. | User sees: "Welcome to MotorPH Payroll System".    | User sees: "Welcome to MotorPH Payroll System".    | PASS        |

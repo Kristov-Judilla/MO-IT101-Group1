@@ -12,6 +12,45 @@
 </p>
 
 
+flowchart TD
+    %% Client Layer
+    A[Client] -->|Initiate Google OAuth| B[Google OAuth Service]
+    B -->|Redirect to API| C[HTTPS]
+    B -->|Token Generated| D[Token]
+    A -->|POST /posts/| E[Django Server]
+    A -->|GET /feed/?page=1&size=10| E
+
+    %% Django Server
+    subgraph E[Django Server]
+        %% Configuration and Logging
+        F[ConfigManager-Singleton: Config Manager]
+        G[Logger-Singleton: Logger] -->|"Log API Events: Response Times, Cache Hit Rates"| H[Log to File: logs/feedview.log]
+        G -->|"Log to Console"| I[Console]
+
+        %% Post Creation
+        subgraph J[Post Creation]
+            K[UserModel: Find Author] --> L[PostModel: Create Post]
+            L -->|"Save Post"| M[SQLite Database]
+        end
+
+        %% Feed Retrieval
+        subgraph N[Feed Retrieval]
+            O[Caching Layer: Redis for Production, LocMemCache for Dev] --> P[PostModel: Query Posts]
+            P -->|"Indexing: created_at, author_id"| M
+            P -->|"Query Optimization: select_related, prefetch_related, only"| M
+            P -->|"Sorting: order by created_at descending"| P
+            P -->|"Pagination: PageNumberPagination"| P
+            P -->|"Filtering: followed/liked/friends"| P
+            P -->|"Privacy Filtering: public/private/friends"| P
+            P -->|"RBAC: admin/moderator/regular user"| P
+            P --> Q[ViewModel: Serialize Data]
+        end
+    end
+
+    %% Database Layer
+    M[SQLite Database]
+    
+
 ## 👋 Who Are We?
 We are a group of beginner programmers excited to learn Java as part of our **Computer Programming 1** journey! Our goal is to build strong fundamentals, work on fun projects, and support each other as we grow into confident developers. 💡
 

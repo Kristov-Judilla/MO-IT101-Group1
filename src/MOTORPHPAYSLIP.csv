@@ -1,0 +1,49 @@
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10001,Chief Executive Officer Garcia Manuel III,90000,2024-06-03 to 2024-06-15,50463.9,3073.1800000000003,47390.72
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10002,Lim Antonio,Chief Operating Officer,2024-06-03 to 2024-06-15,30821.199999999997,2001.76,28819.44
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-15,45106.8,2001.76,43105.04
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-15,45106.8,2001.76,43105.04
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-15,45106.8,2001.76,43105.04
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10002,Lim Antonio,Chief Operating Officer,2024-06-03 to 2024-06-15,30821.199999999997,2001.76,28819.44
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10010,Alvaro Roderick,Accounting Head,2024-06-03 to 2024-06-15,26830.8,5136.860000000001,21693.94
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-15,45106.8,2180.33,42926.47
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10002,Lim Antonio,Chief Operating Officer,2024-06-03 to 2024-06-15,30821.199999999997,2001.76,28819.44
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10034,Santos Beatriz,Customer Service and Relations,2024-06-03 to 2024-06-15,26830.8,2001.76,24829.04
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-15,53678.16,2001.76,51676.4
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-18,49392.48,2001.76,47390.72
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-18,49392.48,2001.76,47390.72
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-15,49392.48,2001.76,47390.72
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-12,16392.744000000002,2001.76,14390.984000000002,1
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-12,36535.44,2001.76,34533.68,1
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late
+10002,Lim Antonio,Chief Operating Officer,2024-06-03 to 2024-06-15,25106.96,2477.9466666666667,22629.013333333332,1
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-18,7607.1,2001.76,5605.34,0
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-15,49999.61800000002,2001.76,47997.858000000015,1
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-15,49999.61800000002,2001.76,47997.858000000015,1
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-03 to 2024-06-15,53254.05625000001,10126.695000000002,43127.36125000001,0
+Employee ID,Name,Position,Period,Gross Pay,Total Deductions,Net Pay,Days Late
+10001,Garcia Manuel III,Chief Executive Officer,2024-06-05 to 2024-06-15,43731.811,8644.564,35087.247,0
+"10001","Garcia Manuel III","Chief Executive Officer","2024-09-09 to 2024-09-22","30519.42","5679.76","24839.65","2"
+"10005","Hernandez Eduard","IT Operations and Systems","2024-07-01 to 2024-08-04","43371.36","5597.18","37774.18","5"
+"10001","Garcia Manuel III","Chief Executive Officer","2024-06-03 to 2024-06-09","13487.40","2376.87","11110.53","1"
+"10001","Garcia Manuel III","Chief Executive Officer","2024-06-03 to 2024-06-09","13487.40","2376.87","11110.53","1"
+"10001","Garcia Manuel III","Chief Executive Officer","2024-07-01 to 2024-07-14","32108.69","6094.96","26013.73","2"

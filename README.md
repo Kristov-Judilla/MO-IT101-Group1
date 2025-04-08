@@ -192,16 +192,18 @@ Would you like to process another employee? (yes/no):
 
 Here’s what makes Payroll Hub awesome:
 
-- ⏱️ **Worked Hours Calculation**: Tracks hours per pay period, including overtime at 1.25x rate   
-- 💰 **Gross Pay Computation**: Includes worked hours, overtime, and holiday pay  
-- 🎉 **Holiday Support**: Covers all Philippine holidays (regular and special non-working) for 2023-2025  
-- 📅 **Flexible Pay Periods**: Supports pay periods spanning across years  
-- ⏰ **Tardiness Grace Period**: No deduction for tardiness ≤15 minutes  
-- 📊 **Government Deductions**: Applies SSS, PhilHealth, Pag-IBIG, and withholding tax  
-- 💸 **Net Pay Calculation**: Determines final pay after deductions   
-- 📜 **CSV Output**: Saves payroll data to `MotorPHPayslip.csv`, including days late    
-- ✅ **Input Validation**: Ensures valid dates, hours, tardiness, and days late  
-- 📋 **Formatted Output**: Aligns columns for readability  
+- 📅 Payroll Period Selection: Employees can choose between weekly, bi-weekly, or monthly payroll periods
+- ⏱️ Worked Hours Calculation: Tracks hours per pay period, including overtime at 1.25x rate
+- 💰 Gross Pay Computation: Includes worked hours, overtime, and allowances
+- 📅 Flexible Pay Periods: Supports pay periods spanning across years
+- ⏰ Tardiness Grace Period: No deduction for tardiness ≤15 minutes
+- 📊 Government Deductions: Applies SSS, PhilHealth, Pag-IBIG, and withholding tax
+- 💸 Net Pay Calculation: Determines final pay after deductions
+- 📜 CSV Output: Saves payroll data to MotorPHPayslip.csv, including days late
+- ✅ Input Validation: Ensures valid payroll type and period selection
+- 📋 Formatted Output: Aligns columns for readability
+- 🔍 Clean Console Output: Removes unnecessary log messages from the console, providing a user-friendly interface
+- 📝 Logging System: Logs all operations, including errors, to payroll.log for debugging while keeping the console clean
 
 ---
 
@@ -209,11 +211,16 @@ Here’s what makes Payroll Hub awesome:
 
 The program handles files as follows:
 
-- **Input**:  
-  📌 `Employee.csv` (Employee data including hourly rate and allowances)  
+📁 Understand File Handling
+The program handles files as follows:
 
-- **Output**:  
-  📌 `MotorPHPayslip.csv` (Payroll data in CSV format)  
+Input:
+- 📌 Employee.csv (Employee data including hourly rate and allowances)
+- 📌 Attendance.csv (Employee login/logout records for hours calculation)
+- 📌 weeklyhours.csv (Weekly hours data for determining available pay periods)
+Output:
+- 📌 MotorPHPayslip.csv (Payroll data in CSV format)
+- 📌 payroll.log (Log file for debugging and operation tracking) 
 
 ---
 

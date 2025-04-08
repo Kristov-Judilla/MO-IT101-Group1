@@ -223,13 +223,15 @@ The program handles files as follows:
 /MO-IT101-Group1
 ├── MotorPH-Payroll-System/
 │   ├── src/
-│   │   └── MotorPH.java
-│   ├── data/
-│   │   └── Employee.csv
+│   │   ├── MotorPH.java
+│   │   ├── Employee.csv
+│   │   ├── Attendance.csv
+│   │   ├── weeklyhours.csv
+│   │   ├── payroll.log
+│   │   └── MotorPHPayslip.csv
 │   ├── assets/
 │   │   ├── banner.png
 │   │   └── screenshot.png
-│   └── MotorPHPayslip.csv
 ├── README.md
 ├── .gitignore
 └── LICENSE

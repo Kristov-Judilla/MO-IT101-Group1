@@ -52,10 +52,10 @@ Happy Coding! 💻🔥
 
 ---
 
-## 🌟 Explore Payroll Hub: MotorPH Payroll System
-
 Payroll Hub is a sleek and efficient Java-based payroll system designed for MotorPH employees. It simplifies payroll processing with the following capabilities:
 
+
+- 📅 Payroll Period Selection: Employees can choose between weekly, bi-weekly, or monthly payroll periods
 - ⏱️ Calculates work hours with a 15-minute grace period for tardiness
 - 💰 Computes gross pay based on worked hours, overtime, and holiday pay
 - 📊 Applies government deductions (SSS, PhilHealth, Pag-IBIG, withholding tax)
@@ -76,60 +76,112 @@ Welcome to the MotorPH Payroll System, a Java-based application for processing e
 ## Payroll Hub Output Screenshot
 
 <p align="center">
-  <img src="https://github.com/Kristov-Judilla/MO-IT101-Group1/raw/main/assets/screenshot.gif" alt="Payroll Hub Output Screenshot" width="100%">
+  <img src="https://github.com/Kristov-Judilla/MO-IT101-Group1/raw/main/assets/screenshots.gif" alt="Payroll Hub Output Screenshot" width="100%">
 </p>
 
 ---
 ```
-=====================================
-   Welcome to MotorPH Payroll System   
-=====================================
-This program generates payroll slips for employees.
-Please provide the required details below.
-
-Enter Employee ID: 10001
-Enter start date (YYYY-MM-DD): 2024-06-03
-Enter end date (YYYY-MM-DD): 2024-06-18
-Enter Total Worked Hours: 80
-Enter Overtime Hours: 0
-Enter Tardiness Minutes Late: 15
-Enter Days Late: 1
-Did the employee work on 2024-06-12 (Independence Day)? (yes/no): yes
-Enter hours worked on 2024-06-12: 8
-
 =========================================
-           MOTORPH PAYROLL               
+        MOTORPH WEEKLY PAYROLL        
 =========================================
 
 POSITION: Chief Executive Officer
 EMPLOYEE: Garcia Manuel III
 ID: 10001
-PERIOD: 2024-06-03 to 2024-06-18
+PERIOD: 2024-06-03 to 2024-06-09
 HOURLY RATE: P535.71
 
-DESCRIPTION                             HOURS/MINUTES  AMOUNT
+DESCRIPTION                             HOURS/AMOUNT   AMOUNT
 -----------------------------------------
-BASIC PAY                               72.00          P 38,571.12
-OVERTIME (1.25x rate)                   0.00           P      0.00
-HOLIDAY PAY (Independence Day, Regular) 8.00           P  8,571.36
-TARDINESS DEDUCTION                     15.00          -P      0.00
-RICE SUBSIDY                                           P    750.00
-PHONE ALLOWANCE                                        P  1,000.00
-CLOTHING ALLOWANCE                                     P    500.00
+BASIC PAY                               30.98          P 16,598.08
+TARDINESS                               7.77           -P  4,160.68
+OVERTIME                                0.00           P      0.00
+RICE SUBSIDY                                           P    350.00
+PHONE ALLOWANCE                                        P    466.67
+CLOTHING ALLOWANCE                                     P    233.33
 -----------------------------------------
-GROSS PAY                                              P 49,392.48
+GROSS PAY                                              P 13,487.40
 
 -----------------------------------------
-SSS DEDUCTION                                          -P  1,125.00
-PhilHealth                                             -P    515.69
-PAG-IBIG                                               -P    100.00
-WITHHOLDING TAX                                        -P    261.07
+SSS DEDUCTION                                          -P    262.50
+PhilHealth                                             -P    202.31
+PAG-IBIG                                               -P     23.33
+WITHHOLDING TAX                                        -P  1,888.72
 -----------------------------------------
-TOTAL DEDUCTIONS                                       -P  2,001.76
+TOTAL DEDUCTIONS                                       -P  2,376.87
 =========================================
-NET PAY: P47,390.72
+NET PAY: P11,110.53
 =========================================
 
+=========================================
+        MOTORPH BI-WEEKLY PAYROLL        
+=========================================
+
+POSITION: Chief Executive Officer
+EMPLOYEE: Garcia Manuel III
+ID: 10001
+PERIOD: 2024-06-03 to 2024-06-16
+HOURLY RATE: P535.71
+
+DESCRIPTION                             HOURS/AMOUNT   AMOUNT
+-----------------------------------------
+BASIC PAY                               64.83          P 34,731.87
+TARDINESS                               12.67          -P  6,785.66
+OVERTIME                                0.00           P      0.00
+RICE SUBSIDY                                           P    700.00
+PHONE ALLOWANCE                                        P    933.33
+CLOTHING ALLOWANCE                                     P    466.67
+-----------------------------------------
+GROSS PAY                                              P 30,046.21
+
+-----------------------------------------
+SSS DEDUCTION                                          -P    525.00
+PhilHealth                                             -P    450.69
+PAG-IBIG                                               -P     46.67
+WITHHOLDING TAX                                        -P  4,533.78
+-----------------------------------------
+TOTAL DEDUCTIONS                                       -P  5,556.14
+=========================================
+NET PAY: P24,490.07
+=========================================
+
+Payslip successfully exported to C:\Users\Kristov\Documents\COMPROG1\JavaApplication3\src\MOTORPHPAYSLIP.csv
+Thank you for using MotorPH Payroll System!
+Would you like to process another employee? (yes/no): yes
+
+=========================================
+        MOTORPH MONTHLY PAYROLL        
+=========================================
+
+POSITION: Chief Executive Officer
+EMPLOYEE: Garcia Manuel III
+ID: 10001
+PERIOD: 2024-06-03 to 2024-06-30
+HOURLY RATE: P535.71
+
+DESCRIPTION                             HOURS/AMOUNT   AMOUNT
+-----------------------------------------
+BASIC PAY                               131.65         P 70,526.22
+TARDINESS                               20.90          -P 11,196.34
+OVERTIME                                0.00           P      0.00
+RICE SUBSIDY                                           P  1,400.00
+PHONE ALLOWANCE                                        P  1,866.67
+CLOTHING ALLOWANCE                                     P    933.33
+-----------------------------------------
+GROSS PAY                                              P 63,529.88
+
+-----------------------------------------
+SSS DEDUCTION                                          -P  1,050.00
+PhilHealth                                             -P    952.95
+PAG-IBIG                                               -P     93.33
+WITHHOLDING TAX                                        -P  9,914.03
+-----------------------------------------
+TOTAL DEDUCTIONS                                       -P 12,010.32
+=========================================
+NET PAY: P51,519.57
+=========================================
+
+Payslip successfully exported to C:\Users\Kristov\Documents\COMPROG1\JavaApplication3\src\MOTORPHPAYSLIP.csv
 Thank you for using MotorPH Payroll System!
 Would you like to process another employee? (yes/no): 
 ```
@@ -182,35 +234,24 @@ The program handles files as follows:
 ├── .gitignore
 └── LICENSE
 ```
+
 ## 🧪 Test Cases
 
-Below are the test cases for the MotorPH Payroll System, covering various scenarios to ensure the application works as expected. These test cases include launching the application, processing payroll with valid and invalid inputs, and saving payroll data to a CSV file. Columns for actual results and pass/fail status will be filled out after testing.
+Below are the test cases for the MotorPH Payroll System, covering various scenarios to ensure the application works as expected. These test cases include launching the application, processing payroll with valid and invalid inputs, saving payroll data to a CSV file, and verifying the absence of log messages in the console.
+
 # MotorPH Payroll System Test Cases
-## Notes
-- **Test Case 3**: The "Expected Result" is blank as per the original input. It may need a specific success message (e.g., "PAYROLL data saved to [path]").
-- **Expected Results**: Some cases (e.g., 2 and 5) show the welcome message, which might not fully reflect payroll processing. Update these if specific outputs are expected.
 
-
-
-| Scenario   | Test Case ID | Test Case Description              | Test Data                                                                 | Test Steps                                              | Expected Result                                    | Actual Result                                      | Test Result |
-|------------|--------------|------------------------------------|---------------------------------------------------------------------------|--------------------------------------------------------|----------------------------------------------------|----------------------------------------------------|-------------|
-| Scenario 1 | 1            | Launch the payroll application     | Path: `C:\Users\Kristov\Documents\COMPROG1\Prog 1 MotorPH\Employee.csv`   | 1. Open NetBeans.<br>2. Open MotorPH project.<br>3. Run `MOTORPH.java`. | User sees: "Welcome to MotorPH Payroll System".    | User sees: "Welcome to MotorPH Payroll System".    | PASS        |
-| Scenario 1 | 2            | Process payroll with valid inputs  | Employee ID: 10001<br>Start: 2024-06-19<br>End: 2024-06-30<br>Hours: 80<br>OT: 0<br>Tardy: 15 min<br>Late: 1 day | 1. Enter Employee ID.<br>2. Enter dates.<br>3. Enter hours, OT, tardy, late.<br>4. No holidays. | User sees: "Welcome to MotorPH Payroll System".    | User sees: "Welcome to MotorPH Payroll System".    | PASS        |
-| Scenario 1 | 3            | Save payroll to CSV                | Output: `C:\Users\Kristov\Documents\COMPROG1\Prog 1 MotorPH\MOTORPHPAYSLIP.csv` | 1. Complete payroll for ID 10001.<br>2. Save to CSV.    |                                                    |                                                    | PASS        |
-| Scenario 2 | 4            | Launch the payroll application     | Path: `C:\Users\Kristov\Documents\COMPROG1\Prog 1 MotorPH\Employee.csv`   | 1. Open NetBeans.<br>2. Open MotorPH project.<br>3. Run `MOTORPH.java`. | User sees: "Welcome to MotorPH Payroll System".    | User sees: "Welcome to MotorPH Payroll System".    | PASS        |
-| Scenario 2 | 5            | Process payroll with a holiday     | Employee ID: 10001<br>Start: 2024-06-03<br>End: 2024-06-18<br>Hours: 80<br>OT: 0<br>Tardy: 15 min<br>Late: 1 day<br>Holiday: 2024-06-12 (8 hrs) | 1. Enter Employee ID.<br>2. Enter dates.<br>3. Enter hours, OT, tardy, late.<br>4. Confirm 8 hrs on 2024-06-12. | User sees: "Welcome to MotorPH Payroll System".    | User sees: "Welcome to MotorPH Payroll System".    | PASS        |
-| Scenario 2 | 6            | Save payroll to CSV                | Output: `C:\Users\Kristov\Documents\COMPROG1\Prog 1 MotorPH\MOTORPHPAYSLIP.csv` | 1. Complete payroll for ID 10001.<br>2. Save to CSV.    | User sees: "PAYROLL data saved to [path]".         | User sees: "PAYROLL data saved to [path]".         | PASS        |
-| Scenario 3 | 7            | Launch the payroll application     | Path: `C:\Users\Kristov\Documents\COMPROG1\Prog 1 MotorPH\Employee.csv`   | 1. Open NetBeans.<br>2. Open MotorPH project.<br>3. Run `MOTORPH.java`. | User sees: "Welcome to MotorPH Payroll System".    | User sees: "Welcome to MotorPH Payroll System".    | PASS        |
-| Scenario 3 | 8            | Process payroll with invalid Employee ID | Employee ID: 99999<br>Start: 2024-06-03<br>End: 2024-06-18             | 1. Enter invalid Employee ID.<br>2. Enter dates.       | User sees: "Employee ID not found".                | User sees: "Employee ID not found".                | PASS        |
-| Scenario 3 | 9            | Process payroll with invalid date format | Employee ID: 10001<br>Start: 2024/06/03<br>End: 2024-06-18             | 1. Enter Employee ID.<br>2. Enter start date (wrong format).<br>3. Enter end date. | User sees: "Error: Invalid date format. Please use YYYY-MM-DD". | User sees: "Error: Invalid date format. Please use YYYY-MM-DD". | PASS        |
-
-## Notes
-- **Test Case 3**: The "Expected Result" and "Actual Result" are blank as per the original input. It’s marked as "PASS" assuming the save operation succeeded silently. Update with a specific message (e.g., "PAYROLL data saved to [path]") if needed.
-- **Expected Results**: Some cases (e.g., 2 and 5) show the welcome message instead of payroll-specific outputs. All are marked "PASS" as the actual matches the expected.
-
-## Notes
-- **Test Case 3**: The "Expected Result" is blank as per the original input. It may need a specific success message (e.g., "PAYROLL data saved to [path]").
-- **Expected Results**: Some cases (e.g., 2 and 5) show the welcome message, which might not fully reflect payroll processing. Update these if specific outputs are expected.
+| Scenario   | Test Case ID | Test Case Description               | Test Data                                                                 | Test Steps                                                                 | Expected Result                                                                                   | Actual Result                                                                                   | Test Result |
+|------------|--------------|-------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|-------------|
+| Scenario 1 | 1            | Launch the payroll application      | Path: `C:\Users\Kristov\Documents\COMPROG1\JavaApplication3\src\`         | 1. Open NetBeans.<br>2. Open MotorPH project.<br>3. Run `MOTORPH.java`.  | User sees: "Welcome to MotorPH Payroll System".                                                  | User sees: "Welcome to MotorPH Payroll System".                                                  | PASS        |
+| Scenario 1 | 2            | Process payroll with valid inputs   | Employee ID: 10001<br>Period: 2024-06-03 to 2024-06-16                  | 1. Select payroll type (bi-weekly).<br>2. Enter Employee ID.<br>3. Select period. | User sees payroll output:<br>NET PAY: P24,490.07                                                 | User sees payroll output:<br>NET PAY: P24,490.07                                                 | PASS        |
+| Scenario 1 | 3            | Save payroll to CSV                 | Output: `C:\Users\Kristov\Documents\COMPROG1\JavaApplication3\src\MOTORPHPAYSLIP.csv` | 1. Complete payroll for ID 10001.<br>2. Save to CSV.                     | User sees: "Payslip successfully exported to [path]".                                            | User sees: "Payslip successfully exported to [path]".                                            | PASS        |
+| Scenario 2 | 4            | Launch the payroll application      | Path: `C:\Users\Kristov\Documents\COMPROG1\JavaApplication3\src\`         | 1. Open NetBeans.<br>2. Open MotorPH project.<br>3. Run `MOTORPH.java`.  | User sees: "Welcome to MotorPH Payroll System".                                                  | User sees: "Welcome to MotorPH Payroll System".                                                  | PASS        |
+| Scenario 2 | 5            | Save payroll to CSV                 | Output: `C:\Users\Kristov\Documents\COMPROG1\JavaApplication3\src\MOTORPHPAYSLIP.csv` | 1. Complete payroll for ID 10001.<br>2. Save to CSV.                     | User sees: "Payslip successfully exported to [path]".                                            | User sees: "Payslip successfully exported to [path]".                                            | PASS        |
+| Scenario 3 | 6            | Launch the payroll application      | Path: `C:\Users\Kristov\Documents\COMPROG1\JavaApplication3\src\`         | 1. Open NetBeans.<br>2. Open MotorPH project.<br>3. Run `MOTORPH.java`.  | User sees: "Welcome to MotorPH Payroll System".                                                  | User sees: "Welcome to MotorPH Payroll System".                                                  | PASS        |
+| Scenario 3 | 7            | Process payroll with invalid Employee ID | Employee ID: 99999<br>Period: 2024-06-03 to 2024-06-16              | 1. Select payroll type.<br>2. Enter invalid Employee ID.<br>3. Select period. | User sees: "Employee ID not found".                                                              | User sees: "Employee ID not found".                                                              | PASS        |
+| Scenario 3 | 8            | Process payroll with invalid period selection | Employee ID: 10001<br>Period: 2024-06-03 to 2024-06-16          | 1. Select payroll type.<br>2. Enter Employee ID.<br>3. Enter invalid period number (e.g., 999). | User sees: "Invalid selection. Please enter a number between 1 and [number of periods]."         | User sees: "Invalid selection. Please enter a number between 1 and [number of periods]."         | PASS        |
+| Scenario 4 | 9            | Verify no log messages in console   | Employee ID: 10001<br>Period: 2024-06-03 to 2024-06-16                  | 1. Select payroll type (bi-weekly).<br>2. Enter Employee ID.<br>3. Select period.<br>4. Process payroll. | Console output contains no log messages (e.g., "INFO: Total regular hours..."). Only payroll output and user prompts are shown. | Console output contains no log messages. Only payroll output and user prompts are shown.          | PASS        |
 
 
 

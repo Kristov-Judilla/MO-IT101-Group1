@@ -290,7 +290,7 @@ This project acknowledges the contributions of the following individuals. Below 
 |-----------------------|---------------------|-------------------|-------------------|
 | Kristofer Judilla     | [@Kristov-Judilla](https://github.com/Kristov-Judilla)   |     <img src="https://github.com/Kristov-Judilla.png" width="50" height="50">               |      Developer             |
 | Abigail Ann Sarmiento |  [@aasarmiento](https://github.com/aasarmiento)        |     <img src="https://github.com/aasarmiento.png" width="50" height="50">               |                QA Analyst   |
-| Justine Ciar |  [@aasarmiento](https://github.com/justineciar)        |     <img src="https://github.com/justineciar.png" width="50" height="50">               |                Technical Lead/Architect |
+| Justine Ciar |  [@justineciar](https://github.com/justineciar)        |     <img src="https://github.com/justineciar.png" width="50" height="50">               |                Technical Lead/Architect |
 
 
 ---
